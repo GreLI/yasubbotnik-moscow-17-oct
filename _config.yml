@@ -12,13 +12,13 @@ kramdown:
   enable_coderay: false
 
 presentation:
-    title: Название темы
-    service: Сервис
-    nda: true
+    title: SVG в вебе
+    service: Поиск
+    nda: false
 
 author:
-    name: Автор
-    position: Должность
+    name: Лев Солнцев
+    position: Разработчик интерфейсов
     company:
         name: Яндекс
         url:  http://yandex.ru/
