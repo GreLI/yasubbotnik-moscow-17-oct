@@ -1,6 +1,7 @@
 ---
 
 layout: default
+title: SVG в вебе
 
 ---
 
@@ -8,9 +9,9 @@ layout: default
 
 ## **{{ site.presentation.title }}** {#cover}
 
-<div class="s">
+<!-- <div class="s">
     <div class="service">{{ site.presentation.service }}</div>
-</div>
+</div> -->
 
 {% if site.presentation.nda %}
 <div class="nda"></div>
@@ -20,18 +21,25 @@ layout: default
   <p class="author">{{ site.author.name }}, <br/> {{ site.author.position }}</p>
 </div>
 
-## Введение
+## <sup>*</sup>Что такое SVG
 {:.section}
 
 ### WTF is SVG
 
 ## SVG — Scalable Vector Graphics
 
-### Векторная графика
+### Производный формат VML (Microsoft) и PGML (разработан из Adobe PostScript)
 
-* Масштабируется
-* Хорошо смотрится на любых DPI
-* XML-документ (прост почти как HTML)
+* Масштабируемая
+* Чёткая на любых DPI
+* XML-документ
+* Можно редактировать в текстовом редакторе
+* Может включать растровые изображения, ссылки, стили, скрипты
+
+## Как выглядит SVG
+{:.section}
+
+### Пример кода
 
 ## Пример кода: логотип SVG
 
@@ -39,7 +47,7 @@ layout: default
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
   <title>SVG Logo</title>
-  <desc>Designed for the SVG Logo Contest in 2006 b  Harvey Rayner, and
+  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner, and
     adopted by W3C in 2009. It is available under the Creative Commons license
     for those who have an SVG product or who are using SVG on their site.</desc>
   <g stroke-width="38" stroke="#000">
@@ -59,6 +67,23 @@ layout: default
 {:.center}
 
 ![](pictures/svg-logo.svg){:.horizontal-big}
+
+## Примитивы
+
+### Вводный текст (первый уровень текста)
+![placeholder](pictures/primitives.svg){:.right-image}
+
+~~~ markup
+<rect x="0" y="0" width="100" height="60" rx="15" fill="skyblue"/>
+<circle cx="150" cy="40" r="40" fill="pink"/>
+<ellipse cx="120" cy="100" rx="100" ry="40" transform="rotate(10)" fill="peachpuff"/>
+<line x1="15" y1="210" x2="255" y2="180" stroke="silver"/>
+<polyline points="30,270 80,230 150,260 220,220 290,230" stroke="skyblue"/>
+<polygon points="150,75 258,137.5 258,262.5 150,325 42,262.6 42,137.5" fill="lightgreen" transform="translate(180 0) scale(.4) rotate(90 150 200)"/>
+~~~
+
+Текст
+{:.note}
 
 ## &nbsp;
 {:.with-big-quote}
