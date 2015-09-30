@@ -33,19 +33,19 @@ layout: default
 * Хорошо смотрится на любых DPI
 * XML-документ (прост почти как HTML)
 
-## Пример кода
+## Пример кода: логотип SVG
 
 ~~~ markup
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 300 300">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
   <title>SVG Logo</title>
   <desc>Designed for the SVG Logo Contest in 2006 b  Harvey Rayner, and
     adopted by W3C in 2009. It is available under the Creative Commons license
     for those who have an SVG product or who are using SVG on their site.</desc>
   <g stroke-width="38" stroke="#000">
     <g id="b" transform="translate(150 150)">
-      <path id="a" fill="#ffb13b" d="M-84.15-15.85a22.417 22.417 0 1 0 0 31.7
-                                     h168.3a22.417 22.417 0 1 0 0-31.7z"/>
+      <path id="a" fill="#ffb13b" d="M-84.15,-15.85
+        a22.417,22.417 0 1 0 0,31.7 h168.3 a22.417,22.417 0 1 0 0,-31.7z"/>
       <use xlink:href="#a" transform="rotate(45)"/>
       <use xlink:href="#a" transform="rotate(90)"/>
       <use xlink:href="#a" transform="rotate(135)"/>
@@ -55,16 +55,10 @@ layout: default
 </svg>
 ~~~
 
-## Заголовок
+## Как выглядит в браузере: логотип SVG
+{:.center}
 
-### Вводный текст (первый уровень текста)
-![placeholder](pictures/vertical-placeholder.png){:.right-image}
-
-*  Второй уровень текста
-  * Третий уровень текста (буллиты)
-  * Третий уровень текста (буллиты)
-
-  1. Четвертый уровень текста
+![](pictures/svg-logo.svg){:.tmp}
 
 ## &nbsp;
 {:.with-big-quote}
@@ -72,130 +66,6 @@ layout: default
 
 Текст
 {:.note}
-
-## Пример подсветки кода на JavaScript
-
-~~~ javascript
-!function() {
-    var jar,
-        rstoreNames = /[^\w]/g,
-        storageInfo = window.storageInfo || window.webkitStorageInfo,
-        toString = "".toString;
-
-    jar = this.jar = function( name, storage ) {
-        return new jar.fn.init( name, storage );
-    };
-
-    jar.storages = [];
-    jar.instances = {};
-    jar.prefixes = {
-        storageInfo: storageInfo
-    };
-
-    jar.prototype = this.jar.fn = {
-        constructor: jar,
-
-        version: 0,
-
-        storages: [],
-        support: {},
-
-        types: [ "xml", "html", "javascript", "js", "css", "text", "json" ],
-
-        init: function( name, storage ) {
-
-            // Name of a object store must contain only alphabetical symbols or low dash
-            this.name = name ? name.replace( rstoreNames, "_" ) : "jar";
-            this.deferreds = {};
-
-            if ( !storage ) {
-                this.order = jar.order;
-            }
-
-            // TODO – add support for aliases
-            return this.setup( storage || this.storages );
-        },
-
-        // Setup for all storages
-        setup: function( storages ) {
-            this.storages = storages = storages.split ? storages.split(" ") : storages;
-
-            var storage,
-                self = this,
-                def = this.register(),
-                rejects = [],
-                defs = [];
-
-            this.stores = jar.instances[ this.name ] || {};
-
-            // Jar store meta-info in lc, if we don't have it – reject call
-            if ( !window.localStorage ) {
-                window.setTimeout(function() {
-                    def.reject();
-                });
-                return this;
-            }
-
-            // Initiate all storages that we can work with
-            for ( var i = 0, l = storages.length; i < l; i++ ) {
-                storage = storages[ i ];
-
-                // This check needed if user explicitly specified storage that
-                // he wants to work with, whereas browser don't implement it
-                if ( jar.isUsed( storage ) ) {
-
-                    // If jar with the same name was created, do not try to re-create store
-                    if ( !this.stores[ storage ] ) {
-
-                        // Initiate storage
-                        defs.push( this[ storage ]( this.name, this ) );
-
-                        // Initiate meta-data for this storage
-                        this.log( storage );
-                    }
-
-                } else {
-                    rejects.push( storage );
-                }
-            }
-
-            if ( !this.order ) {
-                this.order = {};
-
-                for ( i = 0, l = this.types.length; i < l; i++ ) {
-                    this.order[ this.types[ i ] ] = storages;
-                }
-            }
-
-            if ( rejects.length == storages.length ) {
-                window.setTimeout(function() {
-                    def.reject();
-                });
-
-            } else {
-                jar.when.apply( this, defs )
-                    .done(function() {
-                        jar.instances[ this.name ] = this.stores;
-
-                        window.setTimeout(function() {
-                            def.resolve([ self ]);
-                        });
-                    })
-                    .fail(function() {
-                        def.reject();
-                    });
-            }
-            return this;
-        }
-    };
-
-    jar.fn.init.prototype = jar.fn;
-
-    jar.has = function( base, name ) {
-        return !!jar.fn.meta( name, base.replace( rstoreNames, "_" ) );
-    };
-}.call( window );
-~~~
 
 ## Пример подсветки кода
 {:.code-with-text}
