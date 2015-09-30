@@ -834,3 +834,8 @@ body .slide:first-of-type h2
 .horizontal-big {
     height: 471px;
 }
+
+.slide pre.top-code {
+    margin-top: 0;
+    padding-top: 0;
+}

@@ -70,27 +70,27 @@ title: SVG в вебе
 
 ## Примитивы
 
-### Вводный текст (первый уровень текста)
 ![placeholder](pictures/primitives.svg){:.right-image}
 
 ~~~ markup
-<rect x="0" y="0" width="100" height="60" rx="15" fill="skyblue"/>
+<rect x="0" y="0" width="100" height="60"
+    rx="15" fill="skyblue"/>
+
 <circle cx="150" cy="40" r="40" fill="pink"/>
-<ellipse cx="120" cy="100" rx="100" ry="40" transform="rotate(10)" fill="peachpuff"/>
-<line x1="15" y1="210" x2="255" y2="180" stroke="silver"/>
-<polyline points="30,270 80,230 150,260 220,220 290,230" stroke="skyblue"/>
-<polygon points="150,75 258,137.5 258,262.5 150,325 42,262.6 42,137.5" fill="lightgreen" transform="translate(180 0) scale(.4) rotate(90 150 200)"/>
+
+<ellipse cx="120" cy="100" rx="100" ry="40"
+    transform="rotate(10)" fill="peachpuff"/>
+
+<line x1="15" y1="210" x2="255" y2="180"
+    stroke="silver"/>
+
+<polyline points="30,270 80,230 150,260
+    220,220 290,230" stroke="skyblue"/>
+
+<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
+    fill="lightgreen"/>
 ~~~
-
-Текст
-{:.note}
-
-## &nbsp;
-{:.with-big-quote}
-> Цитата
-
-Текст
-{:.note}
+{:.top-code}
 
 ## Пример подсветки кода
 {:.code-with-text}
