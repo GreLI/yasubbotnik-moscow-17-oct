@@ -58,7 +58,7 @@ layout: default
 ## Как выглядит в браузере: логотип SVG
 {:.center}
 
-![](pictures/svg-logo.svg){:.tmp}
+![](pictures/svg-logo.svg){:.horizontal-big}
 
 ## &nbsp;
 {:.with-big-quote}

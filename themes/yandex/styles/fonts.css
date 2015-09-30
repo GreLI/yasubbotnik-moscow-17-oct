@@ -1,12 +1,12 @@
 /* Input Mono (only regular) */
-@font-face
-{
-    font-family: 'InputMono';
 
-    src: url('../fonts/InputMono/InputMono-Regular.eot');
-    src: url('../fonts/InputMono/InputMono-Regular.woff') format('woff'),
-    url('../fonts/InputMono/InputMono-Regular.ttf') format('truetype'),
-    url('../fonts/InputMono/InputMono-Regular.svg') format('svg');
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('../fonts/SourceCodePro/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+         url('../fonts/SourceCodePro/SourceCodePro-Regular.otf.woff') format('woff');
 }
 
 /* Textbook */
