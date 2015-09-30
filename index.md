@@ -20,19 +20,38 @@ layout: default
 	<p class="author">{{ site.author.name }}, <br/> {{ site.author.position }}</p>
 </div>
 
-## Верхний колонтитул
+## Введение
 {:.section}
 
-### Название раздела
+### WTF is SVG
 
-## Заголовок
+## SVG — Scalable Vector Graphics
 
-### Вводный текст (первый уровень текста)
+### Векторная графика
 
-*  Второй уровень текста
-	* Третий уровень текста (буллиты)
+* Масштабируется
+* Хорошо смотрится на любых DPI
+* XML-документ (прост почти как HTML)
 
-	1. Четвертый уровень текста
+## Пример кода
+
+~~~ xml
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
+    <title>SVG Logo</title>
+    <desc>
+        Designed for the SVG Logo Contest in 2006 by Harvey Rayner, and adopted by W3C in 2009. It is available under the Creative Commons license for those who have an SVG product or who are using SVG on their site.
+    </desc>
+    <g stroke-width="38" stroke="#000">
+        <g id="b" transform="translate(150 150)">
+            <path id="a" fill="#ffb13b" d="M-84.15-15.85a22.417 22.417 0 1 0 0 31.7h168.3a22.417 22.417 0 1 0 0-31.7z"/>
+            <use xlink:href="#a" transform="rotate(45)"/>
+            <use xlink:href="#a" transform="rotate(90)"/>
+            <use xlink:href="#a" transform="rotate(135)"/>
+        </g>
+    </g>
+    <use xlink:href="#b"/>
+</svg>
+~~~
 
 ## Заголовок
 
@@ -283,10 +302,10 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 <p class="position">{{ site.author.position }}</p>
 
     <div class="contacts">
-        <p class="contacts-left contacts-top phone">+7 (000) 000-00-00</p>
-        <p class="contacts-left mail">почта@yandex-team.ru</p>
-        <p class="contacts-right contacts-top twitter">@twitter</p>
+        <!-- <p class="contacts-left contacts-top phone">+7 (000) 000-00-00</p> -->
+        <p class="contacts-left mail">lev.sun@yandex.ru</p>
+        <p class="contacts-right contacts-top twitter">@ruGreLI</p>
         <!-- <p class="contacts-right contacts-bottom vk">vk</p> -->
-        <p class="contacts-right facebook">facebook</p>
+        <!-- <p class="contacts-right facebook">facebook</p> -->
     </div>
 </div>
