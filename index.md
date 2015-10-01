@@ -68,6 +68,19 @@ title: SVG в вебе
 
 ![](pictures/svg-logo.svg){:.horizontal-big}
 
+## Примеры использования SVG
+
+### Да повсюду!
+
+## Поддержка
+
+### Уже практически везде
+
+* IE 9+ (фильтры IE 10+, но баги масштабирования)
+* Firefox 4+ (раньше только object, баг с размытием)
+* iOS
+* Android 3+ (полноценно 4.4+)
+
 ## Примитивы
 
 ![placeholder](pictures/primitives.svg){:.right-image}
@@ -88,109 +101,87 @@ title: SVG в вебе
     220,220 290,230" stroke="skyblue"/>
 
 <polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
-    fill="lightgreen"/>
+    fill="tan"/>
 ~~~
 {:.top-code}
 
-## Пример подсветки кода
-{:.code-with-text}
+## Стилизация
 
-Вводный текст
+### Заливка, обводка, градиенты и пр.
 
-~~~ javascript
-var jar,
-    rstoreNames = /[^\w]/g,
-    storageInfo = window.storageInfo || window.webkitStorageInfo,
-    toString = "".toString;
+## Пиксели
 
-jar = this.jar = function( name, storage ) {
-    return new jar.fn.init( name, storage );
-};
-~~~
+### pixel-perfect графика
 
-## &nbsp;
-{:.big-code}
+## path
 
-~~~ javascript
-!function() {
-    var jar,
-        rstoreNames = /[^\w]/g,
-        storageInfo = window.storageInfo || window.webkitStorageInfo,
-        toString = "".toString;
+## Текст
 
-    jar = this.jar = function( name, storage ) {
-        return new jar.fn.init( name, storage );
-    };
+* Пишем текст
+* Графические эффекты
 
-    jar.storages = [];
-    jar.instances = {};
-    jar.prefixes = {
-        storageInfo: storageInfo
-    };
-}.call( window );
-~~~
+## Группировка и переиспользование
 
-## LaTeX
+## Иконки
 
-Библиотека для латекса довольно тяжелая, а нужна она в редких случаях.
-Поэтому она не включена в репу, ее нужно либо установить через bower либо иметь интернет.
+## Маски
 
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+## Трансформации
 
-## Заголовок
-{:.images}
+## viewBox
 
-![](pictures/horizontal-placeholder.png)
-*Текст*
+## Маски
 
-![](pictures/horizontal-placeholder.png)
-*Текст*
+## Фильтры
 
-![](pictures/horizontal-placeholder.png)
-*Текст*
+## Анимация
 
-## Заголовок
-{:.images .two}
+* SMIL
+* Javascript
+* CSS анимации
+* Будущее: Web Animations
 
-![](pictures/horizontal-middle-placeholder.png)
-*Текст*
+## Методы вставки
 
-![](pictures/horizontal-middle-placeholder.png)
-*Текст*
+* Object
+* Iframe
+* \<img\>
+* CSS
+* HTML5
 
-## Заголовок
-{:.center}
+## Object/Iframe
 
-![](pictures/horizontal-big-placeholder.png){:.tmp}
+* Можно вставлять ссылки на внешние ресурсы
+* Можно вставлять скрипты
+* Доступно для JS страницы
+* Трудно стилизовать, надо задавать размеры
+* Не наследуются стили страницы
 
-## **![](pictures/cover-placeholder.png)**
+## \<img\>
 
-## ![](pictures/horizontal-cover-placeholder.png)
-{:.cover}
+* Нельзя вставлять ссылки на внешние ресурсы
+* Нельзя вставлять скрипты
+* Недоступно для JS страницы
+* Браузер применит размеры картинки, если они есть
+* Не наследуются стили страницы
 
-## Таблица
+## CSS
 
-|  Locavore      | Umami       | Helvetica | Vegan     |
-+----------------|-------------|-----------|-----------+
-| Fingerstache   | Kale        | Chips     | Keytar    |
-| Sriracha       | Gluten-free | Ennui     | Keffiyeh  |
-| Thundercats    | Jean        | Shorts    | Biodiesel |
-| Terry          | Richardson  | Swag      | Blog      |
-+----------------|-------------|-----------|-----------+
+* Нельзя вставлять ссылки на внешние ресурсы
+* Нельзя вставлять скрипты
+* Недоступно для JS страницы
+* Браузер применит размеры картинки, если они есть
+* Не наследуются стили страницы
+* Имеют почти все преимущества картинок в CSS (но есть баги)
 
+## HTML5
 
-## Таблица с дополнительным полем
-
-{:.with-additional-line}
-|  Locavore      | Umami       | Helvetica | Vegan     |
-+----------------|-------------|-----------|-----------+
-| Fingerstache   | Kale        | Chips     | Keytar    |
-| Sriracha       | Gluten-free | Ennui     | Keffiyeh  |
-| Thundercats    | Jean        | Shorts    | Biodiesel |
-| Terry          | Richardson  | Swag      | Blog      |
-+----------------|-------------|-----------|-----------+
-| Terry          | Richardson  | Swag      | Blog      |
+* Можно вставлять ссылки на внешние ресурсы
+* Можно  вставлять скрипты
+* Единое глобальное пространство JS со страницей
+* Браузер применит размеры картинки, если они есть
+* Стили страницы наследуются.
+* Можно переиспользовать элементы других SVG.
 
 ## **Контакты** {#contacts}
 

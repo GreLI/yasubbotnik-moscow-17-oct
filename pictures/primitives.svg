@@ -6,7 +6,7 @@
   <ellipse cx="120" cy="100" rx="100" ry="40" transform="rotate(10)" fill="peachpuff"/>
   <g fill="none" stroke-width="5">
       <line x1="15" y1="210" x2="255" y2="180" stroke="silver"/>
-      <polyline points="30,270 80,230 150,260 220,220 290,230" stroke="skyblue"/>
+      <polyline points="30,270 80,230 150,260 220,220 290,230" stroke="tan"/>
       <polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8" fill="lightgreen"/>
   </g>
 </svg>
