@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: SVG в вебе
+title: Приручаем SVG
 
 ---
 
@@ -36,6 +36,37 @@ title: SVG в вебе
 * Можно редактировать в текстовом редакторе
 * Может включать растровые изображения, ссылки, стили, скрипты
 
+## Поддержка
+
+* IE 9+ (фильтры IE 10+, но баги масштабирования)
+* Firefox 4+ (раньше только object, баг с размытием)
+* iOS
+* Android 3+ (полноценно 4.4+)
+
+## Примитивы
+
+![placeholder](pictures/primitives.svg){:.right-image}
+
+~~~ markup
+<rect x="0" y="0" width="100" height="60"
+    rx="15" fill="skyblue"/>
+
+<circle cx="150" cy="40" r="40" fill="pink"/>
+
+<ellipse cx="120" cy="100" rx="100" ry="40"
+    transform="rotate(10)" fill="peachpuff"/>
+
+<line x1="15" y1="210" x2="255" y2="180"
+    stroke="silver"/>
+
+<polyline points="30,270 80,230 150,260 220,220
+    290,230" stroke="tan" fill="none"/>
+
+<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
+    fill="lightgreen"/>
+~~~
+{:.top-code}
+
 ## Как выглядит SVG
 {:.section}
 
@@ -68,50 +99,20 @@ title: SVG в вебе
 
 ![](pictures/svg-logo.svg){:.horizontal-big}
 
-## Примеры использования SVG
+## Начинаем рисовать
 
-### Да повсюду!
-
-## Поддержка
-
-### Уже практически везде
-
-* IE 9+ (фильтры IE 10+, но баги масштабирования)
-* Firefox 4+ (раньше только object, баг с размытием)
-* iOS
-* Android 3+ (полноценно 4.4+)
-
-## Примитивы
-
-![placeholder](pictures/primitives.svg){:.right-image}
+![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image}
 
 ~~~ markup
-<rect x="0" y="0" width="100" height="60"
-    rx="15" fill="skyblue"/>
-
-<circle cx="150" cy="40" r="40" fill="pink"/>
-
-<ellipse cx="120" cy="100" rx="100" ry="40"
-    transform="rotate(10)" fill="peachpuff"/>
-
-<line x1="15" y1="210" x2="255" y2="180"
-    stroke="silver"/>
-
-<polyline points="30,270 80,230 150,260
-    220,220 290,230" stroke="skyblue"/>
-
-<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
-    fill="tan"/>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="50" height="50"
+     viewBox="0 0 50 50">
+  <rect x="5" y="5" width="40" height="40"
+        rx="5" stroke-width="1"
+        stroke="black" fill="none"/>
+</svg>
 ~~~
 {:.top-code}
-
-## Стилизация
-
-### Заливка, обводка, градиенты и пр.
-
-## Пиксели
-
-### pixel-perfect графика
 
 ## path
 

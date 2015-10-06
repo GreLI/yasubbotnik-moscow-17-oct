@@ -12,7 +12,7 @@ kramdown:
   enable_coderay: false
 
 presentation:
-    title: SVG в вебе
+    title: Приручаем SVG
     service: Поиск
     nda: false
 
