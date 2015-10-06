@@ -21,10 +21,10 @@ title: Приручаем SVG
   <p class="author">{{ site.author.name }}, <br/> {{ site.author.position }}</p>
 </div>
 
-## <sup>*</sup>Что такое SVG
+## Введение
 {:.section}
 
-### WTF is SVG
+### Что такое SVG
 
 ## SVG — Scalable Vector Graphics
 
@@ -42,35 +42,6 @@ title: Приручаем SVG
 * Firefox 4+ (раньше только object, баг с размытием)
 * iOS
 * Android 3+ (полноценно 4.4+)
-
-## Примитивы
-
-![placeholder](pictures/primitives.svg){:.right-image}
-
-~~~ markup
-<rect x="0" y="0" width="100" height="60"
-    rx="15" fill="skyblue"/>
-
-<circle cx="150" cy="40" r="40" fill="pink"/>
-
-<ellipse cx="120" cy="100" rx="100" ry="40"
-    transform="rotate(10)" fill="peachpuff"/>
-
-<line x1="15" y1="210" x2="255" y2="180"
-    stroke="silver"/>
-
-<polyline points="30,270 80,230 150,260 220,220
-    290,230" stroke="tan" fill="none"/>
-
-<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
-    fill="lightgreen"/>
-~~~
-{:.top-code}
-
-## Как выглядит SVG
-{:.section}
-
-### Пример кода
 
 ## Пример кода: логотип SVG
 
@@ -99,20 +70,82 @@ title: Приручаем SVG
 
 ![](pictures/svg-logo.svg){:.horizontal-big}
 
-## Начинаем рисовать
+## Примитивы
 
-![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image}
+![placeholder](pictures/primitives.svg){:.right-image}
 
 ~~~ markup
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="50" height="50"
-     viewBox="0 0 50 50">
-  <rect x="5" y="5" width="40" height="40"
-        rx="5" stroke-width="1"
-        stroke="black" fill="none"/>
-</svg>
+<rect x="0" y="0" width="100" height="60"
+    rx="15" fill="skyblue"/>
+
+<circle cx="150" cy="32" r="32" fill="pink"/>
+
+<ellipse cx="120" cy="100" rx="100" ry="32"
+    transform="rotate(10)" fill="peachpuff"/>
+
+<line x1="15" y1="210" x2="255" y2="180"
+    stroke="silver"/>
+
+<polyline points="30,270 80,230 150,260 220,220
+    290,230" stroke="tan" fill="none"/>
+
+<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
+    fill="lightgreen"/>
 ~~~
 {:.top-code}
+
+## Проба пера
+{:.section}
+
+### Начинаем рисовать
+
+## Начинаем рисовать
+
+![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image.pixelated}
+
+~~~ markup
+<rect x="9" y="6"
+      width="32" height="32" rx="5"
+      stroke="black" stroke-width="1"
+      fill="none"/>
+~~~
+
+## Рисунок в пикселях
+
+![Размытый прямоугольник](pictures/pixels.svg){:.right-image}
+
+~~~ markup
+<rect x="9" y="6"
+      width="32" height="32" rx="5"
+      stroke="black" stroke-width="1"
+      fill="none"/>
+~~~
+
+## Исправляем рисунок в пикселях
+
+![Размытый прямоугольник](pictures/pixels2.svg){:.right-image}
+
+~~~ markup
+<rect x="9.5" y="6.5"
+      width="32" height="32" rx="5"
+      stroke="black" stroke-width="1"
+      fill="none"/>
+~~~
+
+## Попали в пиксели
+
+![Неразмытый прямоугольник](pictures/nonblurry-rect.png){:.right-image.pixelated}
+
+~~~ markup
+<rect x="9.5" y="6.5"
+      width="32" height="32" rx="5"
+      stroke="black" stroke-width="1"
+      fill="none"/>
+~~~
+
+## &nbsp;
+{:.with-big-quote}
+> Даже векторная графика рисуется в пикселях
 
 ## path
 
