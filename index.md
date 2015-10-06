@@ -30,6 +30,8 @@ title: Приручаем SVG
 
 ### Производный формат VML (Microsoft) и PGML (разработан из Adobe PostScript)
 
+### Спецификация: [www.w3.org/TR/SVG/](http://www.w3.org/TR/SVG/)
+
 * Масштабируемая
 * Чёткая на любых DPI
 * XML-документ
