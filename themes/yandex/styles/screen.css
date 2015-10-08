@@ -843,3 +843,21 @@ body .slide:first-of-type h2
 .pixelated {
     image-rendering: pixelated;
 }
+
+.right-image-small
+{
+    position: absolute;
+    top: 156px;
+    right: 40px;
+
+    width: 200px;
+    height: 180px;
+}
+
+.language-highlight {
+    position: absolute;
+    top: 166.5px;
+    left: 45px;
+    background: none !important;
+    color: red !important;
+}

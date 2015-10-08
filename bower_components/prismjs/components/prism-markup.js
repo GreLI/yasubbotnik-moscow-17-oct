@@ -13,6 +13,14 @@ Prism.languages.markup = {
 					'namespace': /^[\w-]+?:/
 				}
 			},
+			'path-data': {
+				pattern: /(\bd=)("[^"]+?"|'[^']+?')/,
+				inside: {
+					'attr-name': /^d/,
+					'punctuation': /=|"|'/g,
+					'command': /[mlhvqtcsaz]/i
+				}
+			},
 			'attr-value': {
 				pattern: /=(?:('|")[\w\W]*?(\1)|[^\s>]+)/gi,
 				inside: {
@@ -26,7 +34,7 @@ Prism.languages.markup = {
 					'namespace': /^[\w-]+?:/
 				}
 			}
-			
+
 		}
 	},
 	'entity': /&amp;#?[\da-z]{1,8};/gi

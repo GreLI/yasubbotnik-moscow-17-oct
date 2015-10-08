@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <title>SVG Logo</title>
+  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner, and
+    adopted by W3C in 2009. It is available under the Creative Commons license
+    for those who have an SVG product or who are using SVG on their site.</desc>
+  <path d="M175.34 69.29a31.85 31.85 0 1 0-50.69 0V88.8l-13.78-13.78a31.85 31.85 0 1 0-35.85 35.85l13.78 13.78H69.3a31.85 31.85 0 1 0 0 50.71h19.5l-13.78 13.78a31.85 31.85 0 1 0 35.85 35.84l13.78-13.78v19.5a31.85 31.85 0 1 0 50.71-.01v-19.5l13.78 13.78a31.85 31.85 0 1 0 35.85-35.85l-13.78-13.78h19.5a31.85 31.85 0 1 0 0-50.71h-19.5l13.78-13.78a31.85 31.85 0 1 0-35.86-35.83L175.35 88.8z" fill="#ffb13b" stroke="#000" stroke-width="19"/>
+</svg>

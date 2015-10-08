@@ -40,10 +40,10 @@ title: Приручаем SVG
 
 ## Поддержка
 
-* IE 9+ (фильтры IE 10+, но баги масштабирования)
-* Firefox 4+ (раньше только object, баг с размытием)
+* IE 9+
+* Firefox 4+
 * iOS
-* Android 3+ (полноценно 4.4+)
+* Android 3+
 
 ## Пример кода: логотип SVG
 
@@ -114,7 +114,7 @@ title: Приручаем SVG
 
 ## Рисунок в пикселях
 
-![Размытый прямоугольник](pictures/pixels.svg){:.right-image}
+![Рисунок в пикселях](pictures/pixels.svg){:.right-image}
 
 ~~~ markup
 <rect x="9" y="6"
@@ -125,7 +125,7 @@ title: Приручаем SVG
 
 ## Исправляем рисунок в пикселях
 
-![Размытый прямоугольник](pictures/pixels2.svg){:.right-image}
+![Исправляем рисунок в пикселях](pictures/pixels2.svg){:.right-image}
 
 ~~~ markup
 <rect x="9.5" y="6.5"
@@ -147,9 +147,267 @@ title: Приручаем SVG
 
 ## &nbsp;
 {:.with-big-quote}
-> Даже векторная графика рисуется в пикселях
+> Даже векторная графика отображается в пикселях
 
-## path
+## Изучаем <path>
+{:.section}
+
+### Контуры
+
+## Логотип auto.ru
+
+![Логотип auto.ru](pictures/auto.ru.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+## Начальная точка
+
+![Логотип auto.ru](pictures/auto.ru1.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="         h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+           M 668,98
+~~~
+
+## Горинтальная прямая
+
+![Логотип auto.ru](pictures/auto.ru2.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98       c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+                    h 668
+~~~
+
+## Кривая Безье
+
+![Логотип auto.ru](pictures/auto.ru3.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668                      l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+                          c 74,0 206,48 260,93
+~~~
+
+## Прямая линия
+
+![Логотип auto.ru](pictures/auto.ru4.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+                                               l 186,153
+~~~
+
+## Кривая Безье
+
+![Логотип auto.ru](pictures/auto.ru5.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+                            l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+
+    c 72,60 164,100 257,111
+~~~
+
+## Прямая линия
+
+![Логотип auto.ru](pictures/auto.ru6.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111          a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+
+                            l 258,32
+~~~
+
+## Дуга
+
+![Логотип auto.ru](pictures/auto.ru7.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+
+                                     a 171,171 0 0 1 146,165
+~~~
+
+## Вертикальная прямая
+
+![Логотип auto.ru](pictures/auto.ru8.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+          c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102 z"
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+
+
+    v 186
+~~~
+
+## Помните?
+{:.center}
+
+![](pictures/svg-logo.svg){:.horizontal-big}
+
+## Пример кода контура: логотип SVG
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <title>SVG Logo</title>
+  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner, and
+    adopted by W3C in 2009. It is available under the Creative Commons license
+    for those who have an SVG product or who are using SVG on their site.</desc>
+  <path d="M 175.34 69.29
+    a 31.85 31.85 0 1 0 -50.69   0    V  88.8         l -13.78 -13.78
+    a 31.85 31.85 0 1 0 -35.85  35.85 l  13.78  13.78 H  69.3
+    a 31.85 31.85 0 1 0   0     50.71 h  19.5         l -13.78  13.78
+    a 31.85 31.85 0 1 0  35.85  35.84 l  13.78 -13.78 v  19.5
+    a 31.85 31.85 0 1 0  50.71   0    v -19.5         l  13.78  13.78
+    a 31.85 31.85 0 1 0  35.85 -35.85 l -13.78 -13.78 h  19.5
+    a 31.85 31.85 0 1 0   0    -50.71 h -19.5         l  13.78 -13.78
+    a 31.85 31.85 0 1 0 -35.86 -35.83 L 175.35 88.8   z"
+    fill="#ffb13b" stroke="#000" stroke-width="19"/>
+</svg>
+~~~
+
+## Пример кода: логотип SVG
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
+  <title>SVG Logo</title>
+  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner, and
+    adopted by W3C in 2009. It is available under the Creative Commons license
+    for those who have an SVG product or who are using SVG on their site.</desc>
+  <g stroke-width="38" stroke="#000">
+    <g id="b" transform="translate(150 150)">
+      <path id="a" fill="#ffb13b" d="M-84.15,-15.85
+        a22.417,22.417 0 1 0 0,31.7 h168.3 a22.417,22.417 0 1 0 0,-31.7z"/>
+      <use xlink:href="#a" transform="rotate(45)"/>
+      <use xlink:href="#a" transform="rotate(90)"/>
+      <use xlink:href="#a" transform="rotate(135)"/>
+    </g>
+  </g>
+  <use xlink:href="#b"/>
+</svg>
+~~~
 
 ## Текст
 

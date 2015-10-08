@@ -89,6 +89,10 @@ pre[class*="language-"] {
 	color: #690;
 }
 
+.token.command {
+	color: #090;
+}
+
 .token.operator,
 .token.entity,
 .token.url,
@@ -100,6 +104,7 @@ pre[class*="language-"] {
 
 .token.atrule,
 .token.attr-value,
+.token.path-data,
 .token.keyword {
 	color: #07a;
 }
