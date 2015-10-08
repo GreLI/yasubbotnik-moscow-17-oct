@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 16">
+  <g fill="#669">
+    <path id="pin" d="
+      M10 5a5 5 0 1 0 -5 5L5 9.97l-1.94 6C6.63 11 10 9 10 5
+      M5 8.35a3.38 3.38 0 0 1 0-6.76 3.38 3.38 0 0 1 0 6.76
+      m0-5a1.63 1.63 0 0 0 0 3.26 1.63 1.63 0 0 0 0-3.26"/>
+  </g>
+  <use x="12" fill="red" xlink:href="#pin"/>
+</svg>
