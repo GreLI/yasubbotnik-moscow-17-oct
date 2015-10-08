@@ -55,15 +55,15 @@ title: Приручаем SVG
     adopted by W3C in 2009. It is available under the Creative Commons license
     for those who have an SVG product or who are using SVG on their site.</desc>
   <g stroke-width="38" stroke="#000">
-    <g id="b" transform="translate(150 150)">
-      <path id="a" fill="#ffb13b" d="M-84.15,-15.85
+    <g id="svgstar" transform="translate(150 150)">
+      <path id="svgbar" fill="#ffb13b" d="M-84.15,-15.85
         a22.417,22.417 0 1 0 0,31.7 h168.3 a22.417,22.417 0 1 0 0,-31.7z"/>
-      <use xlink:href="#a" transform="rotate(45)"/>
-      <use xlink:href="#a" transform="rotate(90)"/>
-      <use xlink:href="#a" transform="rotate(135)"/>
+      <use xlink:href="#svgbar" transform="rotate(45)"/>
+      <use xlink:href="#svgbar" transform="rotate(90)"/>
+      <use xlink:href="#svgbar" transform="rotate(135)"/>
     </g>
   </g>
-  <use xlink:href="#b"/>
+  <use xlink:href="#svgstar"/>
 </svg>
 ~~~
 
@@ -364,9 +364,9 @@ title: Приручаем SVG
 ## Помните?
 {:.center}
 
-![](pictures/svg-logo.svg){:.horizontal-big}
+![](pictures/svg-logo2.svg){:.horizontal-big}
 
-## Пример кода контура: логотип SVG
+## Пример контура: логотип SVG
 
 ~~~ markup
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
@@ -397,15 +397,15 @@ title: Приручаем SVG
     adopted by W3C in 2009. It is available under the Creative Commons license
     for those who have an SVG product or who are using SVG on their site.</desc>
   <g stroke-width="38" stroke="#000">
-    <g id="b" transform="translate(150 150)">
-      <path id="a" fill="#ffb13b" d="M-84.15,-15.85
+    <g id="svgstar" transform="translate(150 150)">
+      <path id="svgbar" fill="#ffb13b" d="M-84.15,-15.85
         a22.417,22.417 0 1 0 0,31.7 h168.3 a22.417,22.417 0 1 0 0,-31.7z"/>
-      <use xlink:href="#a" transform="rotate(45)"/>
-      <use xlink:href="#a" transform="rotate(90)"/>
-      <use xlink:href="#a" transform="rotate(135)"/>
+      <use xlink:href="#svgbar" transform="rotate(45)"/>
+      <use xlink:href="#svgbar" transform="rotate(90)"/>
+      <use xlink:href="#svgbar" transform="rotate(135)"/>
     </g>
   </g>
-  <use xlink:href="#b"/>
+  <use xlink:href="#svgstar"/>
 </svg>
 ~~~
 
