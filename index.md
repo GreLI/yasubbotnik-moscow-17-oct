@@ -360,6 +360,10 @@ title: Приручаем SVG
 
     v 186
 ~~~
+## Сделайте как и тут, только по-другому
+{:.section}
+
+### Переиспользование кода
 
 ## Помните?
 {:.center}
@@ -427,7 +431,7 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Спрайты
+## Спрайты в HTML
 
 ### [<svg><use xlink:href="#pin"></use></svg> ул. Льва Толстого, 16](//yandex.ru){:.whover}
 
@@ -503,6 +507,11 @@ title: Приручаем SVG
 ~~~
 
 ### [github.com/LeaVerou/dpi/commit/9e51d2](https://github.com/LeaVerou/dpi/commit/9e51d2f3e6bb0a6e441675bd75b4065034e5e123)
+
+## [philbit.com/svgpatterns/](http://philbit.com/svgpatterns/)
+{:.center}
+
+![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp}
 
 ## Анимация
 
