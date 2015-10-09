@@ -515,6 +515,35 @@ title: Приручаем SVG
 ![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp width="951" height="471"}
 <!-- 1605×795 -->
 
+## Дорогой, вынеси мусор!
+{:.section}
+
+### Оптимизации
+
+## SVGO — SVG Optimizer
+
+### [github.com/svg/svgo](https://github.com/svg/svgo)
+
+~~~ bash
+$ svgo test.svg test.min.svg
+~~~
+
+~~~ bash
+$ svgo -s '<polyline points="30,270 80,230 150,260 220,220"/>' -o -
+<path d="M30 270l50-40 70 30 70-40"/>
+~~~
+
+~~~ bash
+$ svgo test.svg --disable=removeHiddenElems
+~~~
+
+## Почитать
+
+### Understanding svg coordinate systems and transformations:  http://sarasoueidan.com/blog/svg-transformations/
+by [@SaraSoueidan](http://twitter.com/SaraSoueidan)
+
+### SVG-фигуры и трансформации: http://css.yoksel.ru/svg-shapes/
+
 ## **Контакты** {#contacts}
 
 <div class="info">
