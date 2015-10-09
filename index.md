@@ -40,10 +40,10 @@ title: Приручаем SVG
 
 ## Поддержка
 
-* IE 9+
+* IE 9+ (базовая, улучшена в IE 10)
 * Firefox 4+
 * iOS
-* Android 3+
+* Android 3+ (базовая, улучшена в 4.4)
 
 ## Пример кода: логотип SVG
 
@@ -364,7 +364,7 @@ title: Приручаем SVG
 ## Сделайте как и тут, только по-другому
 {:.section}
 
-### Переиспользование кода
+### Переиспользование
 
 ## Помните?
 {:.center}
@@ -414,7 +414,7 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Переиспользование кода
+## Переиспользование
 
 ![Спрайт](pictures/pin.svg){:.right-image-small}
 
@@ -560,26 +560,6 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Убираем совсем лишнее
-
-~~~ markup
-
-
-
-
-<svg                            xmlns="http://www.w3.org/2000/svg"
-
-     width="48  " height="48  "
-                                                           >
-
-
-    <path                                         fill="#004381" d="M40.883,34.118..."/>
-
-
-<path                                         fill="#FF6C00" d="M26.325,10.19...z"/>
-</svg>
-~~~
-
 ## SVGO — SVG Optimizer
 
 ### [github.com/svg/svgo](https://github.com/svg/svgo)
@@ -601,11 +581,9 @@ $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 
 * Карманное руководство по написанию SVG:
 [http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html](http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html)
-* [css.yoksel.ru/svg/](http://css.yoksel.ru/svg/)
-* [css.yoksel.ru/pages/svg-links.html](http://css.yoksel.ru/pages/svg-links.html)
+* Много подробных публикаций про SVG: [css.yoksel.ru/](http://css.yoksel.ru/)
+* Полезные ссылки про SVG: [css.yoksel.ru/pages/svg-links.html](http://css.yoksel.ru/pages/svg-links.html)
 * [A Compendium of SVG Information](https://css-tricks.com/mega-list-svg-information/)
-
-### SVG-фигуры и трансформации: http://css.yoksel.ru/svg-shapes/
 
 ## **Контакты** {#contacts}
 
