@@ -511,7 +511,8 @@ title: Приручаем SVG
 ## [philbit.com/svgpatterns/](http://philbit.com/svgpatterns/)
 {:.center}
 
-![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp}
+![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp width="951" height="471"}
+<!-- 1605×795 -->
 
 ## Анимация
 
