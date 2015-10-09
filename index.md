@@ -520,6 +520,66 @@ title: Приручаем SVG
 
 ### Оптимизации
 
+## Код из редактора
+
+~~~ markup
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="48px" height="48px" viewBox="0 0 48 48"
+     enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+  <g>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="#004381" d="M40.883,34.118..."/>
+  </g>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6C00" d="M26.325,10.19...z"/>
+</svg>
+~~~
+
+## Убираем лишнее
+
+~~~ markup
+
+
+
+
+<svg                            xmlns="http://www.w3.org/2000/svg"
+
+     width="48  " height="48  "
+                                                           >
+
+
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="#004381" d="M40.883,34.118..."/>
+
+
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6C00" d="M26.325,10.19...z"/>
+</svg>
+~~~
+
+## Убираем совсем лишнее
+
+~~~ markup
+
+
+
+
+<svg                            xmlns="http://www.w3.org/2000/svg"
+
+     width="48  " height="48  "
+                                                           >
+
+
+    <path                                         fill="#004381" d="M40.883,34.118..."/>
+
+
+<path                                         fill="#FF6C00" d="M26.325,10.19...z"/>
+</svg>
+~~~
+
 ## SVGO — SVG Optimizer
 
 ### [github.com/svg/svgo](https://github.com/svg/svgo)
@@ -534,7 +594,7 @@ $ svgo -s '<polyline points="30,270 80,230 150,260 220,220"/>' -o -
 ~~~
 
 ~~~ bash
-$ svgo test.svg --disable=removeHiddenElems
+$ svgo sprite.svg --disable=removeHiddenElems --precision 2
 ~~~
 
 ## Почитать
