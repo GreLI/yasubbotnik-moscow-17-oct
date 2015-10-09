@@ -861,3 +861,19 @@ body .slide:first-of-type h2
     background: none !important;
     color: red !important;
 }
+
+a.whover {
+    border: 0;
+    background: none;
+    transition: color .3s;
+}
+
+.whover>svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.2em;
+}
+
+.whover:hover {
+    color: #F60;
+}

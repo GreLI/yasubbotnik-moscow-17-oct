@@ -149,7 +149,7 @@ title: Приручаем SVG
 {:.with-big-quote}
 > Даже векторная графика отображается в пикселях
 
-## Изучаем <path>
+## Изучаем \<path\>
 {:.section}
 
 ### Контуры
@@ -387,7 +387,7 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Пример кода: логотип SVG
+## Подробный взгляд: логотип SVG
 
 ~~~ markup
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -398,8 +398,8 @@ title: Приручаем SVG
     for those who have an SVG product or who are using SVG on their site.</desc>
   <g stroke-width="38" stroke="#000">
     <g id="svgstar" transform="translate(150 150)">
-      <path id="svgbar" fill="#ffb13b" d="M-84.15,-15.85
-        a22.417,22.417 0 1 0 0,31.7 h168.3 a22.417,22.417 0 1 0 0,-31.7z"/>
+      <path id="svgbar" fill="#ffb13b" d="M -84.15,-15.85
+        a 22.417,22.417 0 1,0 0,31.7 h 168.3 a 22.417,22.417 0 1,0 0,-31.7 z"/>
       <use xlink:href="#svgbar" transform="rotate(45)"/>
       <use xlink:href="#svgbar" transform="rotate(90)"/>
       <use xlink:href="#svgbar" transform="rotate(135)"/>
@@ -427,12 +427,32 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Группировка и переиспользование
+## Спрайты
+
+### [<svg><use xlink:href="#pin"></use></svg> Ул. Льва Толстого, 16](//yandex.ru){:.whover}
+
+~~~ markup
+<!DOCTYPE html>
+...
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="pin" viewBox="0 0 10 16">
+    <path fill="currentColor" d="
+      M10 5a5 5 0 1 0 -5 5L5 9.97l-1.94 6C6.63 11 10 9 10 5
+      M5 8.35a3.38 3.38 0 0 1 0-6.76 3.38 3.38 0 0 1 0 6.76
+      m0-5a1.63 1.63 0 0 0 0 3.26 1.63 1.63 0 0 0 0-3.26"></path>
+  </symbol>
+</svg>
+...
+<a href="//yandex.ru">
+  <svg><use xlink:href="#pin"></use></svg>
+  ул. Льва Толстого, 16
+</a>
+~~~
 
 ## Анимация
 
 * SMIL
-* Javascript (GSAP)
+* Javascript (Snap.svg, GSAP)
 * CSS анимации
 * Будущее: Web Animations
 
@@ -456,3 +476,15 @@ title: Приручаем SVG
         <p class="contacts-left contacts-top twitter">@ruGreLI</p>
     </div>
 </div>
+
+<!-- Для ссылок -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="pin" viewBox="0 0 10 16">
+    <path fill="currentColor" d="
+      M10 5a5 5 0 1 0 -5 5L5 9.97l-1.94 6C6.63 11 10 9 10 5
+      M5 8.35a3.38 3.38 0 0 1 0-6.76 3.38 3.38 0 0 1 0 6.76
+      m0-5a1.63 1.63 0 0 0 0 3.26 1.63 1.63 0 0 0 0-3.26">
+    </path>
+  </symbol>
+</svg>
