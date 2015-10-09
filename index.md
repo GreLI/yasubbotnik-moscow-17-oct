@@ -599,8 +599,11 @@ $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 
 ## Почитать
 
-### Understanding svg coordinate systems and transformations:  http://sarasoueidan.com/blog/svg-transformations/
-by [@SaraSoueidan](http://twitter.com/SaraSoueidan)
+* Карманное руководство по написанию SVG:
+[http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html](http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html)
+* [css.yoksel.ru/svg/](http://css.yoksel.ru/svg/)
+* [css.yoksel.ru/pages/svg-links.html](http://css.yoksel.ru/pages/svg-links.html)
+* [A Compendium of SVG Information](https://css-tricks.com/mega-list-svg-information/)
 
 ### SVG-фигуры и трансформации: http://css.yoksel.ru/svg-shapes/
 
