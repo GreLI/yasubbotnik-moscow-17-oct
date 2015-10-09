@@ -402,6 +402,20 @@ title: Приручаем SVG
                                           z
 ~~~
 
+## Правила заливки
+
+| `fill-rule="nonzero"` | `fill-rule="evenodd"` |
+| <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
+{:.frameless}
+
+## Правила заливки
+
+### `fill-rule="nonzero"`
+
+| Разное направление | Одно направление |
+| <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 150,100 A 50,50 0 0,1 50,100 M 150,100 A 50,50 0 0,0 50,100"></path></g></svg> | <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 50,100 A 50,50 0 0,1 150,100 M 50,100 A 50,50 0 0,0 150,100"></path></g></svg> |
+{:.frameless}
+
 ## Сделайте как тут, только по-другому
 {:.section}
 

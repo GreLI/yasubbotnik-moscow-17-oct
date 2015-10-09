@@ -582,7 +582,7 @@ body .slide:first-of-type h2
     font-weight: lighter;
 }
 
-.slide table td
+.slide table:not(.frameless) td
 {
     background: -webkit-linear-gradient(bottom, black,black .055em, transparent .055em,transparent ) repeat-x;
     background:    -moz-linear-gradient(bottom, black,black .055em, transparent .055em,transparent ) repeat-x;
