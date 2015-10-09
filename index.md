@@ -103,6 +103,17 @@ title: Приручаем SVG
 
 ## Начинаем рисовать
 
+![Прямоугольник](pictures/rect.svg){:.right-image}
+
+~~~ markup
+<rect x="9" y="6"
+      width="32" height="32" rx="5"
+      stroke="black" stroke-width="1"
+      fill="none"/>
+~~~
+
+## Начинаем рисовать
+
 ![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image.pixelated}
 
 ~~~ markup
