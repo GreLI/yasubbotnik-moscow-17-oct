@@ -96,7 +96,7 @@ title: Приручаем SVG
 ~~~
 {:.top-code}
 
-## Давайте уже сделаем что-нибудь
+## Давайте уже сделаем что-нибудь!
 {:.section}
 
 ### Начинаем рисовать
@@ -112,7 +112,7 @@ title: Приручаем SVG
       fill="none"/>
 ~~~
 
-## Начинаем рисовать
+## Открыли в браузере
 
 ![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image.pixelated}
 
@@ -134,9 +134,9 @@ title: Приручаем SVG
       fill="none"/>
 ~~~
 
-## Исправляем рисунок в пикселях
+## Подвинули рисунок в пикселях
 
-![Исправляем рисунок в пикселях](pictures/pixels2.svg){:.right-image}
+![Подвинули рисунок в пикселях](pictures/pixels2.svg){:.right-image}
 
 ~~~ markup
 <rect x="9.5" y="6.5"
@@ -145,7 +145,7 @@ title: Приручаем SVG
       fill="none"/>
 ~~~
 
-## Попали в пиксели
+## Опять открыли в браузере
 
 ![Неразмытый прямоугольник](pictures/nonblurry-rect.png){:.right-image.pixelated}
 
@@ -372,7 +372,37 @@ title: Приручаем SVG
     v 186
 ~~~
 
-## Сделайте как и тут, только по-другому
+## Замыкание контура
+
+![Логотип auto.ru](pictures/auto.ru1.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2580 1320">
+  <path d="M 668,98 h 668 c 74,0 206,48 260,93 l 186,153
+    c 72,60 164,100 257,111 l 258,32 a 171,171 0 0 1 146,165
+    v 186 c 0,80 -59,143 -146,143 h -191
+    a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 871 a 212,212 0 1 1 -212,-212 212,212 0 1 1 -212,212
+    H 256 c -90,0 -158,-70 -158,-144 V 651
+    c 0,-64 54,-193 108,-247
+    l 210,-204 c 48,-48 177,-102 251,-102  "
+    stroke="#000" stroke-width="197" fill="none"/>
+</svg>
+~~~
+
+~~~ highlight
+
+
+
+
+
+
+
+
+                                          z
+~~~
+
+## Сделайте как тут, только по-другому
 {:.section}
 
 ### Переиспользование
@@ -588,13 +618,14 @@ $ svgo -s '<polyline points="30,270 80,230 150,260 220,220"/>' -o -
 $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 ~~~
 
-## Почитать
+## Почитать про SVG
 
 * Карманное руководство по написанию SVG:
 [http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html](http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html)
 * Много подробных публикаций про SVG: [css.yoksel.ru/](http://css.yoksel.ru/)
 * Полезные ссылки про SVG: [css.yoksel.ru/pages/svg-links.html](http://css.yoksel.ru/pages/svg-links.html)
-* [A Compendium of SVG Information](https://css-tricks.com/mega-list-svg-information/)
+* A Compendium of SVG Information:
+[css-tricks.com/mega-list-svg-information/](https://css-tricks.com/mega-list-svg-information/)
 
 ## **Контакты** {#contacts}
 
