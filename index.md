@@ -445,7 +445,7 @@ title: Приручаем SVG
 
 ## Спрайты в HTML
 
-### [<svg><use xlink:href="#pin"></use></svg> ул. Льва Толстого, 16](//yandex.ru){:.whover}
+### [<svg><use xlink:href="#pin"></use></svg> ул. Льва Толстого, 16](//yandex.ru){:.tcolor}
 
 ~~~ markup
 <!DOCTYPE html>

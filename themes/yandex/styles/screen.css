@@ -396,7 +396,7 @@ body .slide:first-of-type h2
 {
     margin: 0 0 60px 0;
 
-    font: 50px Textbook, Arial;
+    font: 50px/61px Textbook, Arial;
 }
 
 .slide h3,
@@ -856,23 +856,32 @@ body .slide:first-of-type h2
 
 .language-highlight {
     position: absolute;
-    top: 166.5px;
+    top: 166px;
     left: 45px;
     background: none !important;
     color: red !important;
 }
 
-a.whover {
+a.tcolor {
     background: none;
-    transition: color .3s;
+    animation: trans-color 8s infinite linear;
 }
 
-.whover>svg {
+.tcolor>svg {
     width: 1em;
     height: 1em;
     vertical-align: -.2em;
 }
 
-.whover:hover {
+.tcolor:hover {
     color: #F30;
+}
+
+@keyframes trans-color {
+    0%    { color: #0174A7; }
+    17.5% { color: #f30; }
+    35%   { color: #f90; }
+    52.5% { color: #0c0; }
+    70%   { color: #0c9; }
+    87.5% { color: #0174A7; }
 }
