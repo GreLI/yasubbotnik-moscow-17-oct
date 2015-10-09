@@ -436,7 +436,7 @@ body .slide:first-of-type h2
     text-decoration: none;
 
     color: #0174a7;
-    border-bottom: .1em solid;
+    /*border-bottom: .1em solid;*/
 }
 
 /* Quote */
@@ -863,7 +863,6 @@ body .slide:first-of-type h2
 }
 
 a.whover {
-    border: 0;
     background: none;
     transition: color .3s;
 }
@@ -875,5 +874,5 @@ a.whover {
 }
 
 .whover:hover {
-    color: #F60;
+    color: #F30;
 }

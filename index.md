@@ -96,7 +96,7 @@ title: Приручаем SVG
 ~~~
 {:.top-code}
 
-## Проба пера
+## Давайте уже сделаем что-нибудь
 {:.section}
 
 ### Начинаем рисовать
@@ -149,7 +149,7 @@ title: Приручаем SVG
 {:.with-big-quote}
 > Даже векторная графика отображается в пикселях
 
-## Изучаем \<path\>
+## Пройдите пять шагов прямо, заверните за угол направо
 {:.section}
 
 ### Контуры
@@ -429,12 +429,12 @@ title: Приручаем SVG
 
 ## Спрайты
 
-### [<svg><use xlink:href="#pin"></use></svg> Ул. Льва Толстого, 16](//yandex.ru){:.whover}
+### [<svg><use xlink:href="#pin"></use></svg> ул. Льва Толстого, 16](//yandex.ru){:.whover}
 
 ~~~ markup
 <!DOCTYPE html>
 ...
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/199fkj9/xlink">
   <symbol id="pin" viewBox="0 0 10 16">
     <path fill="currentColor" d="
       M10 5a5 5 0 1 0 -5 5L5 9.97l-1.94 6C6.63 11 10 9 10 5
@@ -448,6 +448,61 @@ title: Приручаем SVG
   ул. Льва Толстого, 16
 </a>
 ~~~
+
+## Чёрточка, квадратик, чёрточка. Повторить 60 раз
+{:.section}
+
+### Паттерны
+
+## dpi.lv
+{:.center}
+
+![](pictures/dpi.lv-prev-logo.svg){:.horizontal-big}
+
+## Логотип dpi love
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 270 250">
+  <defs>
+    <rect id="base-pixel" width="16" height="16" stroke="white" stroke-width="2"/>
+    <use xlink:href="#base-pixel" fill="white" id="glow-pixel"/>
+    <use xlink:href="#base-pixel" fill="red" id="pixel"/>
+    <circle cx="102" cy="100" r="83" fill="none" id="magnifier"/>
+  </defs>
+  <path fill="red" d="M200.71,34.103c-9.912,0-19.285,2.294-27.624,6.376...z"/>
+  <use xlink:href="#pixel" x="40" y="69"/>
+  <use xlink:href="#pixel" x="40" y="85"/>
+  <use xlink:href="#pixel" x="40" y="101" />
+  ... всего 61 раз ...
+  <use xlink:href="#pixel" x="168" y="117"/>
+  <use xlink:href="#magnifier" stroke="white" stroke-width="24"/>
+  <use xlink:href="#magnifier" stroke="black" stroke-width="16"/>
+</svg>
+~~~
+
+## It's a pattern time!
+
+![dpi love после оптимизации](pictures/dpi.lv-logo.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 93">
+<pattern id="grid" x="6" y="6" width="6" height="6"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="white"/>
+  <rect x="1" y="1" width="5" height="5" fill="red"/>
+</pattern>
+<path fill="red" d="M33.5,70.65L51.69,88.84l37.16-37.16
+  c.32-.31,.64-.62,.94-.94l2.3-2.84c2.62-3.8,4.15-8.4,4.15-13.37
+  c0-13.04-10.57-23.61-23.61-23.61c-3.72,0-7.23,.86-10.36,2.39z"/>
+<path d="M12.5,24.5h6v-6h6v-6h18v6h6v6h6v-6h6v6h6v24h-6v12h-12
+  v6h-18v-6h-6v-6h-6v-6h-6zm12,0v12h12v-12z" fill="url(#grid)"/>
+<circle fill="none" stroke="white" stroke-width="9" cx="36" cy="36" r="31"/>
+<circle fill="none" stroke="black" stroke-width="6" cx="36" cy="36" r="31"/>
+</svg>
+~~~
+
+### [github.com/LeaVerou/dpi/commit/9e51d2](https://github.com/LeaVerou/dpi/commit/9e51d2f3e6bb0a6e441675bd75b4065034e5e123)
 
 ## Анимация
 
