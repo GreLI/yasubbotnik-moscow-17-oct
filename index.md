@@ -360,6 +360,7 @@ title: Приручаем SVG
 
     v 186
 ~~~
+
 ## Сделайте как и тут, только по-другому
 {:.section}
 
@@ -513,21 +514,6 @@ title: Приручаем SVG
 
 ![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp width="951" height="471"}
 <!-- 1605×795 -->
-
-## Анимация
-
-* SMIL
-* Javascript (Snap.svg, GSAP)
-* CSS анимации
-* Будущее: Web Animations
-
-## Методы вставки
-
-* Object
-* Iframe
-* \<img\>
-* CSS
-* Inline HTML5
 
 ## **Контакты** {#contacts}
 
