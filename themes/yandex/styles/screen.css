@@ -707,7 +707,7 @@ body .slide:first-of-type h2
     letter-spacing: 0.2px;
 
     font-size: 27px;
-    font-weight: normal;
+    /*font-weight: normal;*/
     line-height: 1;
 }
 
