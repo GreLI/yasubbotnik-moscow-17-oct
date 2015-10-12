@@ -34,8 +34,6 @@ title: Приручаем SVG
 
 ## SVG — Scalable Vector Graphics
 
-### Производный формат VML (Microsoft) и PGML (разработан из Adobe PostScript)
-
 ### Спецификация: [www.w3.org/TR/SVG/](http://www.w3.org/TR/SVG/)
 
 * Масштабируется
@@ -113,7 +111,7 @@ title: Приручаем SVG
 ![Прямоугольник](pictures/rect.svg){:.right-image}
 
 ~~~ markup
-<rect x="9" y="6"
+<rect x="6" y="3"
       width="32" height="32" rx="5"
       stroke="black" stroke-width="1"
       fill="none"/>
@@ -124,7 +122,7 @@ title: Приручаем SVG
 ![Размытый прямоугольник](pictures/blurry-rect.png){:.right-image.pixelated}
 
 ~~~ markup
-<rect x="9" y="6"
+<rect x="6" y="3"
       width="32" height="32" rx="5"
       stroke="black" stroke-width="1"
       fill="none"/>
@@ -135,18 +133,18 @@ title: Приручаем SVG
 ![Рисунок в пикселях](pictures/pixels.svg){:.right-image}
 
 ~~~ markup
-<rect x="9" y="6"
+<rect x="6" y="3"
       width="32" height="32" rx="5"
       stroke="black" stroke-width="1"
       fill="none"/>
 ~~~
 
-## Подвинули рисунок в пикселях
+## Сдвинутый рисунок в пикселях
 
 ![Подвинули рисунок в пикселях](pictures/pixels2.svg){:.right-image}
 
 ~~~ markup
-<rect x="9.5" y="6.5"
+<rect x="6.5" y="3.5"
       width="32" height="32" rx="5"
       stroke="black" stroke-width="1"
       fill="none"/>
@@ -157,7 +155,7 @@ title: Приручаем SVG
 ![Неразмытый прямоугольник](pictures/nonblurry-rect.png){:.right-image.pixelated}
 
 ~~~ markup
-<rect x="9.5" y="6.5"
+<rect x="6.5" y="3.5"
       width="32" height="32" rx="5"
       stroke="black" stroke-width="1"
       fill="none"/>
@@ -411,16 +409,16 @@ title: Приручаем SVG
 
 ## Правила заливки
 
-| `fill-rule="nonzero"` | `fill-rule="evenodd"` |
-| <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
-{:.frameless}
-
-## Правила заливки
-
 ### `fill-rule="nonzero"`
 
 | Разное направление | Одно направление |
 | <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 150,100 A 50,50 0 0,1 50,100 M 150,100 A 50,50 0 0,0 50,100"></path></g></svg> | <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 50,100 A 50,50 0 0,1 150,100 M 50,100 A 50,50 0 0,0 150,100"></path></g></svg> |
+{:.frameless}
+
+## Правила заливки
+
+| `fill-rule="nonzero"` | `fill-rule="evenodd"` |
+| <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
 {:.frameless}
 
 ## Сделайте как тут, только по-другому

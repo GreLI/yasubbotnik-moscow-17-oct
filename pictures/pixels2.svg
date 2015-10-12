@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="360">
   <title>Рисунок в пикселях</title>
-  <pattern width="8" height="8" id="grid" patternUnits="userSpaceOnUse">
-    <path d="M.5 8V.5H8" stroke="#ccc" fill="none"/>
+  <pattern width="9" height="9" id="grid" patternUnits="userSpaceOnUse">
+    <path d="M.5 9V.5H9" stroke="#ccc" fill="none"/>
   </pattern>
-  <rect width="393" height="353" fill="url(#grid)"/>
-  <path d="M.5 352.5V.5h392.5M320.5 0v9m-80-9v9m-80-9v9m-80-9v9M0 80.5h9m0 80H0m0 80h9m0 80H0" fill="none" stroke="#000"/>
+  <rect width="397" height="352" fill="url(#grid)"/>
+  <path d="M.5 352V.5H397M360.5 0v9m-45-9v5m-45-5v9m-45-9v5m-45-5v9m-45-9v5m-45-5v9m-45-9v5M0 45.5h5m4 45H0m0 45h5m4 45H0m0 45h5m4 45H0m0 45h5" fill="none" stroke="#000"/>
 
-  <svg x="0" y="0" width="400" height="360" viewBox="0 0 50 45">
-    <rect x="9.5" y="6.5" width="32" height="32" rx="5" stroke="black" stroke-width="1" fill="none"/>
+  <svg x=".5" y=".5" width="396" height="360" viewBox="0 0 44 40">
+    <rect x="6.5" y="3.5" width="32" height="32" rx="5" stroke="black" stroke-width="1" fill="none"/>
   </svg>
-  <rect x="76" y="52" width="256" height="256" rx="40" stroke="#ccc" stroke-width="1.5" stroke-dasharray="9 5" fill="none"/>
+  <rect x="58.5" y="31.5" width="288" height="288" rx="45" stroke="#ccc" stroke-width="1.5" stroke-dasharray="10 6" fill="none"/>
 </svg>
