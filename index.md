@@ -421,6 +421,41 @@ title: Приручаем SVG
 | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
 {:.frameless}
 
+## Давай, расскажи мне
+{:.section}
+
+### Использование
+
+## ![](pictures/tell-me.jpg)
+{:.cover .w}
+
+## Такси
+
+![Шашки такси](pictures/taxi.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+  <g fill="#61605F">
+    <rect x="3"  y="30" width="11" height="11"/>
+    <rect x="14" y="19" width="11" height="11"/>
+    <rect x="25" y="30" width="11" height="11"/>
+    <rect x="36" y="19" width="11" height="11"/>
+    <rect x="47" y="30" width="11" height="11"/>
+  </g>
+</svg>
+~~~
+
+## Такси
+
+![Шашки такси](pictures/taxi-opt.svg){:.right-image-small}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+  <path fill="#61605F"
+        d="M3 30v11h11v-22h11v22h11v-22h11v22h11v-11z"/>
+</svg>
+~~~
+
 ## Сделайте как тут, только по-другому
 {:.section}
 
