@@ -412,13 +412,13 @@ title: Приручаем SVG
 ### `fill-rule="nonzero"`
 
 | Разное направление | Одно направление |
-| <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 150,100 A 50,50 0 0,1 50,100 M 150,100 A 50,50 0 0,0 50,100"></path></g></svg> | <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 50,100 A 50,50 0 0,1 150,100 M 50,100 A 50,50 0 0,0 150,100"></path></g></svg> |
+| ![](pictures/fill-nonzero-add.svg) | ![](pictures/fill-nonzero-sub.svg) |
 {:.frameless}
 
 ## Правила заливки
 
 | `fill-rule="nonzero"` | `fill-rule="evenodd"` |
-| <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
+| <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="2" fill="gold" fill-rule="nonzero" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> | <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="2" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"></path></svg> |
 {:.frameless}
 
 ## Давай, расскажи мне
@@ -456,26 +456,70 @@ title: Приручаем SVG
 </svg>
 ~~~
 
+## ![](pictures/wheel-path.svg)
+{:.cover .white .h}
+
 ## Руль
 
 ![Руль](pictures/wheel.svg){:.right-image-small}
 
 ~~~ markup
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-  <path d="M20 4c-8.836 0-16 7.164-16 16 0 8.837 7.164 16 16 16
-      s16-7.163 16-16c0-8.836-7.164-16-16-16z
-      m0 4c6.343 0 11.523 4.926 11.957 11.158
-      -2.965-3.159-7.217-5.151-11.957-5.151
-      -4.741 0-8.992 1.992-11.958 5.152
-        .434-6.233 5.615-11.159 11.958-11.159z
-      m0 13.989c-1.104 0-1.998-.895-1.998-1.998
-      s.895-1.998 1.998-1.998 1.998.895 1.998 1.998
-      -.894 1.998-1.998 1.998z
-      m-11.228 2.214c.87-.749 1.997-1.206 3.236-1.206 2.759 0 4.995 2.236
-         4.995 4.995 0 1.239-.458 2.366-1.208 3.235-3.24-1.213-5.809-3.783
-        -7.023-7.024zm15.432 7.025c-.75-.869-1.208-1.996-1.208-3.235 0-2.759
-         2.237-4.995 4.996-4.995 1.238 0 2.366.457 3.236 1.206-1.214 3.24
-        -3.783 5.81-7.024 7.024z"/>
+  <path d="M20 4 c-8.836 0-16 7.164-16 16 0 8.837 7.164 16 16 16
+      s16-7.163 16-16 c0-8.836-7.164-16-16-16 z
+      m0 4 c6.343 0 11.523 4.926 11.957 11.158
+           -2.965-3.159-7.217-5.151-11.957-5.151
+           -4.741 0-8.992 1.992-11.958 5.152
+             .434-6.233 5.615-11.159 11.958-11.159 z
+      m0 13.989 c-1.104 0-1.998-.895-1.998-1.998
+      s.895-1.998 1.998-1.998 1.998.895 1.998 1.998-.894 1.998-1.998 1.998 z
+      m-11.228 2.214 c.87-.749 1.997-1.206 3.236-1.206 2.759 0 4.995 2.236 4.995 4.995
+         0 1.239-.458 2.366-1.208 3.235-3.24-1.213-5.809-3.783-7.023-7.024 z
+      m15.432 7.025 c-.75-.869-1.208-1.996-1.208-3.235 0-2.759 2.237-4.995 4.996-4.995
+        1.238 0 2.366.457 3.236 1.206-1.214 3.24 -3.783 5.81-7.024 7.024 z"/>
+</svg>
+~~~
+
+## Ободок руля
+
+![](pictures/wheel-steer.svg){:.horizontal}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <circle cx="20" cy="20" r="14" fill="none" stroke="#000" stroke-width="4"/>
+</svg>
+~~~
+
+## Внутренности руля
+
+![](pictures/wheel-center.svg){:.horizontal}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  ???
+</svg>
+~~~
+
+## Внутренности руля
+
+![](pictures/wheel-center-trick.svg){:.horizontal}
+
+~~~ markup
+<path d="M28 33 a5 5 0 1 1 5-5 V20.46
+         a15.52 14.24 0 0 0 -26 0 V28
+         a5 5 0 1 1 5 5
+         m8-11 a2 2 0 1 1 .1 0"/>
+~~~
+
+## Всё вместе
+
+![](pictures/wheel-combined.svg){:.horizontal}
+
+~~~ markup
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <path d="M28 33 a5 5 0 1 1 5-5 V20.46 a15.52 14.24 0 0 0 -26 0 V28
+           a5 5 0 1 1 5 5 m8-11 a2 2 0 1 1 .1 0"/>
+  <circle cx="20" cy="20" r="14" fill="none" stroke="#000" stroke-width="4"/>
 </svg>
 ~~~
 

@@ -26,6 +26,12 @@ body.list
     background: #fff;
 }
 
+.slide.cover.white
+{
+    background: #FFF;
+    color: #000;
+}
+
 .slide.cover:after,
 .slide.shout:after,
 .slide:after
@@ -829,6 +835,12 @@ body .slide:first-of-type h2
     left: 20px;
   }
 
+}
+
+.horizontal {
+    display: block;
+    margin: auto;
+    height: 300px;
 }
 
 .horizontal-big {
