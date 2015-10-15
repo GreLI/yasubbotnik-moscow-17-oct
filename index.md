@@ -126,6 +126,8 @@ title: Приручаем SVG
 
 ### [github.com/svg/svgo](https://github.com/svg/svgo)
 
+### [jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/) — SVGO's Missing GUI
+
 ~~~ bash
 $ svgo test.svg test.min.svg
 ~~~
@@ -739,14 +741,25 @@ $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 ![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp width="951" height="471"}
 <!-- 1605×795 -->
 
-## Почитать про SVG
+## MOAR!!!
+{:.section}
 
-* Карманное руководство по написанию SVG:
-[http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html](http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html)
-* Много подробных публикаций про SVG: [css.yoksel.ru/](http://css.yoksel.ru/)
+### Дополнительные материалы
+
+## Полезные ссылки
+
+* Карманное руководство по написанию SVG:<br>
+[css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html](http://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html)
+* Много подробных публикаций про SVG: [css.yoksel.ru](http://css.yoksel.ru/)
 * Полезные ссылки про SVG: [css.yoksel.ru/pages/svg-links.html](http://css.yoksel.ru/pages/svg-links.html)
 * A Compendium of SVG Information:
-[css-tricks.com/mega-list-svg-information/](https://css-tricks.com/mega-list-svg-information/)
+[css-tricks.com/mega-list-svg-information](https://css-tricks.com/mega-list-svg-information/)
+
+## Посмотреть
+
+* «Я ♥ SVG». Владимир Кузнецов: [events.yandex.ru/lib/talks/2234/](https://events.yandex.ru/lib/talks/2234/)
+* «Оживляем текст». Юлия Бухвалова: [youtube.com/watch?v=XB7MdbFxPzc](https://www.youtube.com/watch?v=XB7MdbFxPzc)<br>Презентация: [2015.codefest.ru/upload/presentation/2015/yoksel/](http://2015.codefest.ru/upload/presentation/2015/yoksel/)
+* «Styling and Animating Scalable Vector Graphics with CSS». Sara Soueidan: [youtube.com/watch?v=lf7L8X6ZBu8](https://www.youtube.com/watch?v=lf7L8X6ZBu8)
 
 ## **Контакты** {#contacts}
 
