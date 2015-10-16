@@ -72,7 +72,7 @@ title: Приручаем SVG
 </svg>
 ~~~
 
-## Как выглядит в браузере: логотип SVG
+## Как выглядит логотип
 {:.center}
 
 ![](pictures/svg-logo.svg){:.horizontal-big}
@@ -740,7 +740,20 @@ $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 {:.center}
 
 ![](pictures/SVG-Patterns-Gallery-scrsht.png){:.tmp width="951" height="471"}
-<!-- 1605×795 -->
+
+## Кем вы видите себя через пять лет?
+{:.section}
+
+### Будущее
+
+## SVG2
+
+* Меши, штриховка
+* Автоматическое заполнение области текстом
+* z-index
+* Переиспользование новых модулей CSS
+* Обводка с независимой от масштаба шириной (уже сейчас)
+* Многие дополнения и уточнения
 
 ## MOAR!!!
 {:.section}
