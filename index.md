@@ -152,21 +152,22 @@ $ svgo sprite.svg --disable=removeHiddenElems --precision 2
 
 ~~~ markup
 <rect x="0" y="0" width="100" height="60"
-    rx="15" fill="skyblue"/>
+  rx="15" fill="skyblue"/>
 
 <circle cx="150" cy="32" r="32" fill="pink"/>
 
 <ellipse cx="120" cy="100" rx="100" ry="32"
-    transform="rotate(10)" fill="peachpuff"/>
+  transform="rotate(10)" fill="peachpuff"/>
+
+<polygon fill="lightgreen"
+  points="290,80 265,123.2 215,123.2
+  190,80 214.96,36.8 265,36.8"/>
 
 <line x1="15" y1="210" x2="255" y2="180"
-    stroke="silver"/>
+  stroke="silver"/>
 
-<polyline points="30,270 80,230 150,260 220,220
-    290,230" stroke="tan" fill="none"/>
-
-<polygon points="290,80 265,123.2 215,123.2 190,80 214.96,36.8 265,36.8"
-    fill="lightgreen"/>
+<polyline stroke="tan" fill="none"
+  points="30,270 80,230 150,260 220,220 290,230"/>
 ~~~
 {:.top-code}
 

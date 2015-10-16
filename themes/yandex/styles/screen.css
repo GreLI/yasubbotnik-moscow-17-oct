@@ -47,7 +47,7 @@ body.list
 .slide > div
 {
     width: 937px;
-    height: 603px;
+    height: 731px;
     padding: 35px 44px 0 44px;
 }
 
@@ -844,7 +844,7 @@ body .slide:first-of-type h2
 }
 
 .horizontal-big {
-    height: 471px;
+    height: 600px;
 }
 
 .slide pre.top-code {
