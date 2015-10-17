@@ -18,7 +18,8 @@ title: Приручаем SVG
 {% endif %}
 
 <div class="info">
-  <p class="author">{{ site.author.name }}, <br/> {{ site.author.position }}</p>
+  <p class="author">{{ site.author.name }}, <br/> {{ site.author.position }},<br>
+    Я.Субботник, Москва, 17 октября 2015</p>
 </div>
 
 ## О докладчике
